@@ -3,61 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Landing Page</title>
+    <title>Portfolio - Jaywhy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1 class="headline">Welcome to the Future</h1>
-            <p class="subheadline">Transform your ideas into reality with our innovative solutions</p>
-            <a href="#" class="cta-button">Get Started</a>
-        </div>
-    </div>
-    
-    <div class="carousel-section">
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature One</h3>
-                        <p>Innovative solutions that drive results</p>
-                    </div>
+    <div class="portfolio-layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="logo-container">
+                    <img src="https://cdn.prod.website-files.com/60f8853f78774c8775ca079c/60f88ffbc5f9d66015945a35_jaywhy-logo.gif" alt="Logo" class="logo-gif">
                 </div>
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature Two</h3>
-                        <p>Cutting-edge technology at your fingertips</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature Three</h3>
-                        <p>Transform your workflow with ease</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature Four</h3>
-                        <p>Scalable solutions for growing businesses</p>
-                    </div>
-                </div>
-                <!-- Duplicate items for seamless loop -->
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature One</h3>
-                        <p>Innovative solutions that drive results</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="carousel-card">
-                        <h3>Feature Two</h3>
-                        <p>Cutting-edge technology at your fingertips</p>
-                    </div>
-                </div>
+                <h1 class="name">JAYWHY</h1>
+                <nav class="main-nav">
+                    <a href="#works" class="nav-item">WORKS</a>
+                    <a href="#about" class="nav-item">ABOUT</a>
+                    <a href="#resume" class="nav-item">RESUME</a>
+                </nav>
             </div>
-        </div>
+        </aside>
+
+        <!-- Vertical Divider -->
+        <div class="divider"></div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Section - Introduction -->
+            <section class="intro-section">
+                <p class="intro-text">
+                    Jaywhy is a Product Designer who specializes in Growth Design
+                </p>
+                <div class="divider-horizontal"></div>
+            </section>
+
+            <!-- Projects Section -->
+            <!-- Project 1: Chef Yori -->
+            <a href="night-bus-station.html" class="project-link">
+                <section class="project-showcase">
+                    <div class="project-visual">
+                        <img src="chefyori.png" alt="Recipe App Screen" class="project-image">
+                    </div>
+                    <div class="project-details">
+                        <h2 class="project-title">Chef Yori</h2>
+                        <p class="project-description">Your personal AI companion for cooking</p>
+                        <p class="project-date">Startup Health & Wellness</p>
+                        <div class="project-tags">
+                            <span class="tag tag-yellow">App Design</span>
+                            <span class="tag tag-yellow">MICROINTERACTIONS</span>
+                        </div>
+                    </div>
+                </section>
+            </a>
+
+            <div class="divider-horizontal-dotted"></div>
+
+            <!-- Project 2: NOTION STUDIO -->
+            <a href="notion-studio.html" class="project-link">
+                <section class="project-showcase">
+                    <div class="project-visual">
+                        <div class="notion-visual">
+                            <div class="notion-gradient">
+                                <p class="notion-text">start your new</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h2 class="project-title">NOTION STUDIO</h2>
+                        <p class="project-description">Notion feature for hyperfixations</p>
+                        <p class="project-date">DECEMBER 2025</p>
+                        <div class="project-tags">
+                            <span class="tag tag-yellow">PRODUCT DESIGN</span>
+                            <span class="tag tag-yellow">WEB DESIGN</span>
+                        </div>
+                    </div>
+                </section>
+            </a>
+
+            <div class="divider-horizontal-dotted"></div>
+
+            <!-- Project 5: MUSEO STEFANO BARDINI -->
+            <a href="museo-stefano-bardini.html" class="project-link">
+                <section class="project-showcase">
+                    <div class="project-visual">
+                        <div class="poster-container">
+                            <div class="poster">
+                                <div class="poster-image"></div>
+                                <div class="poster-text">BARD THE DEFINITIVE FLORENTINE COLLECTION.</div>
+                            </div>
+                            <div class="poster-background"></div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h2 class="project-title">MUSEO STEFANO BARDINI</h2>
+                        <p class="project-description">Identity redesign of the Stefano Bardini Museum in Florence, Italy</p>
+                        <p class="project-date">FEBRUARY-APRIL 2025</p>
+                        <div class="project-tags">
+                            <span class="tag tag-yellow">BRAND DESIGN</span>
+                            <span class="tag tag-yellow">ART DIRECTION</span>
+                        </div>
+                    </div>
+                </section>
+            </a>
+
+            <div class="divider-horizontal-dotted"></div>
+
+            <!-- Footer Section -->
+            <footer class="footer-section">
+                <div class="footer-cta">
+                    <p class="footer-text">SEE SOMETHING YOU LIKE? →</p>
+                </div>
+                <div class="footer-email">
+                    <a href="mailto:jaywhyk@gmail.com" class="email-link">jaywhyk@gmail.com</a>
+                </div>
+                <div class="footer-credits">
+                    <p class="credits-text">THIS WEBSITE IS TYPESET IN PP NEUE MONTREAL MONO BY PANGRAM PANGRAM'S MAT DESJARDINS AND ANTO ROUNDED MONO BY ANDRE BALDINGER & TOAN VU-HUU BVH TYPE</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>© JAYWHY 2025</p>
+                </div>
+            </footer>
+        </main>
     </div>
 </body>
 </html>
-
