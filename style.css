@@ -14,6 +14,7 @@
     --accent-purple: #9370DB;
     --accent-orange: #FF8C00;
     --divider-grey: #808080;
+    --accent-cyan: #00CED1;
 }
 
 html, body {
@@ -200,7 +201,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    min-height: 500px;
+    height: fit-content;
     position: relative;
     width: 100%;
 }
@@ -208,8 +209,6 @@ body {
 .project-image {
     width: 100%;
     height: auto;
-    min-height: 500px;
-    max-height: 600px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
@@ -986,10 +985,11 @@ body {
 }
 
 .case-study-image {
-    width: 100%;
+    width: 60%;
     height: auto;
     object-fit: contain;
     display: block;
+    margin: 0 auto;
 }
 
 .case-study-text {
@@ -1017,6 +1017,92 @@ body {
     font-family: 'Courier New', monospace;
     line-height: 1.8;
     margin-bottom: 2rem;
+}
+
+/* Info Boxes */
+.info-boxes {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0 3rem 0;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 180px;
+    padding: 1.5rem;
+    border: 2px dashed var(--text-white);
+    border-radius: 8px;
+    background: transparent;
+}
+
+.info-box-title {
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+}
+
+.info-box-content {
+    font-size: 0.9rem;
+    color: var(--text-white);
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Case Study Carousel */
+.case-study-carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 3rem 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--divider-grey) transparent;
+    position: relative;
+}
+
+.case-study-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.case-study-carousel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.case-study-carousel::-webkit-scrollbar-thumb {
+    background-color: var(--divider-grey);
+    border-radius: 4px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 280px;
+    max-width: 280px;
+    height: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    max-height: 650px;
+    border-radius: 12px;
+    object-fit: contain;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--bg-light);
 }
 
 /* Responsive Design */
