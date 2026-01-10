@@ -193,7 +193,7 @@ body {
 }
 
 .project-visual {
-    border: 2px dashed var(--accent-yellow);
+    border: none;
     border-radius: 24px;
     padding: 0;
     background: var(--bg-black);
@@ -213,6 +213,8 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 24px;
+    border: none;
+    outline: none;
 }
 
 /* Recipe App Screen */
@@ -881,6 +883,23 @@ body {
     letter-spacing: 0.05em;
 }
 
+.footer-text-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    color: inherit;
+}
+
+.footer-text-link:hover {
+    opacity: 0.7;
+}
+
+.footer-text-link .footer-text {
+    margin: 0;
+    cursor: pointer;
+}
+
 .footer-email {
     margin-bottom: 3rem;
 }
@@ -985,11 +1004,13 @@ body {
 }
 
 .case-study-image {
-    width: 60%;
+    width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
     margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .case-study-text {
