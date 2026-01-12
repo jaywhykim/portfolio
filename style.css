@@ -1062,17 +1062,17 @@ body {
 
 .blue-ocean-section {
     display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
     margin: 3rem 0;
 }
 
 .blue-ocean-text {
-    flex: 1;
+    width: 100%;
 }
 
 .blue-ocean-visual {
-    flex: 1;
+    width: 100%;
 }
 
 .blue-ocean-section .case-study-section-title {
@@ -1081,17 +1081,17 @@ body {
 
 .prioritization-section {
     display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
     margin: 3rem 0;
 }
 
 .prioritization-text {
-    flex: 1;
+    width: 100%;
 }
 
 .prioritization-visual {
-    flex: 1;
+    width: 100%;
 }
 
 .prioritization-section .case-study-section-title {
@@ -1297,9 +1297,4 @@ body {
         align-self: center;
     }
     
-    .blue-ocean-section,
-    .prioritization-section {
-        flex-direction: column;
-        gap: 2rem;
-    }
 }
