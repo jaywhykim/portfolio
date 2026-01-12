@@ -996,6 +996,10 @@ body {
 
 .case-study-content {
     margin-top: 3rem;
+}
+
+/* Flex layout only for about page */
+.about-content {
     display: flex;
     gap: 3rem;
     align-items: flex-start;
