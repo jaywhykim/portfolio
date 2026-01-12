@@ -1060,6 +1060,44 @@ body {
     margin-bottom: 2rem;
 }
 
+.blue-ocean-section {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    margin: 3rem 0;
+}
+
+.blue-ocean-text {
+    flex: 1;
+}
+
+.blue-ocean-visual {
+    flex: 1;
+}
+
+.blue-ocean-section .case-study-section-title {
+    margin-top: 0;
+}
+
+.prioritization-section {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    margin: 3rem 0;
+}
+
+.prioritization-text {
+    flex: 1;
+}
+
+.prioritization-visual {
+    flex: 1;
+}
+
+.prioritization-section .case-study-section-title {
+    margin-top: 0;
+}
+
 /* Info Boxes */
 .info-boxes {
     display: flex;
@@ -1257,5 +1295,11 @@ body {
     
     .about-profile-image {
         align-self: center;
+    }
+    
+    .blue-ocean-section,
+    .prioritization-section {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
